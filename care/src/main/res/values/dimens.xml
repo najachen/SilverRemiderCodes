@@ -1,5 +1,47 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">6dp</dimen>
+
+    <dimen name="care_menu_height">80dp</dimen>
+
+    <dimen name="text_dp1">26dp</dimen>
+    <dimen name="text_dp2">18dp</dimen>
+    <dimen name="text_dp3">16dp</dimen>
+    <dimen name="text_dp4">8dp</dimen>
+    <dimen name="text_dp5">4dp</dimen>
+
+    <dimen name="text_sp1">56sp</dimen>
+    <dimen name="text_sp2">48sp</dimen>
+    <dimen name="text_sp3">40sp</dimen>
+    <dimen name="text_sp4">32sp</dimen>
+    <dimen name="text_sp5">28sp</dimen>
+    <dimen name="text_sp6">24sp</dimen>
+    <dimen name="text_sp7">20sp</dimen>
+    <dimen name="text_sp8">16sp</dimen>
+
+    <!--
+    參考網址 https://material.google.com/style/typography.html
+    -->
+    <dimen name="size_button">15sp</dimen><!--medium-->
+    <dimen name="size_caption">13sp</dimen><!--regular-->
+    <dimen name="size_body_1">15sp</dimen><!--regular-->
+    <dimen name="size_body_2">15sp</dimen><!--medium-->
+    <dimen name="size_subheading">17sp</dimen><!--regular-->
+    <dimen name="size_title">21sp</dimen><!--medium-->
+    <dimen name="size_headline">24sp</dimen><!--regular-->
+    <dimen name="size_display_1">34sp</dimen><!--regular-->
+    <dimen name="size_display_2">45sp</dimen><!--regular-->
+    <dimen name="size_display_3">56sp</dimen><!--regular-->
+    <dimen name="size_display_4">84sp</dimen><!--regular-->
+    <dimen name="size_display_5">112sp</dimen><!--light-->
+
+    <dimen name="leading_body_1">23sp</dimen>
+    <dimen name="leading_body_2">26sp</dimen>
+    <dimen name="leading_subheading_1">26sp</dimen>
+    <dimen name="leading_subheading_2">30sp</dimen>
+    <dimen name="leading_headline">34dp</dimen>
+    <dimen name="leading_display_1">48dp</dimen>
+    <dimen name="leading_display_2">63dp</dimen>
+
 </resources>
