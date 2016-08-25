@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SilverReminder.iml" filepath="$PROJECT_DIR$/SilverReminder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SilverRemiderCodes.iml" filepath="$PROJECT_DIR$/SilverRemiderCodes.iml" />
       <module fileurl="file://$PROJECT_DIR$/care/care.iml" filepath="$PROJECT_DIR$/care/care.iml" />
       <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
       <module fileurl="file://$PROJECT_DIR$/inventory/inventory.iml" filepath="$PROJECT_DIR$/inventory/inventory.iml" />
