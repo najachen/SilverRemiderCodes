@@ -1,5 +1,6 @@
 package silver.reminder.inventory;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -64,17 +65,28 @@ public class InventoryLocationActivity extends AppCompatActivity implements Adap
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        if ((int) id == R.drawable.func_baby) {
-        } else if ((int) id == R.drawable.func_elwoman) {
-        } else if ((int) id == R.drawable.func_elman) {
-        } else if ((int) id == R.drawable.func_ma) {
-        } else if ((int) id == R.drawable.func_ba) {
-        } else if ((int) id == R.drawable.func_elsister) {
-        } else if ((int) id == R.drawable.func_ysister) {
-        } else if ((int) id == R.drawable.func_brother) {
-        } else if ((int) id == R.drawable.func_mine) {
+    switch ((int)id){
+        case R.drawable.func_baby:
+            startActivity(new Intent(this,InventoryFinanceActivity.class));
+            break;
+        case R.drawable.func_elwoman:
+            break;
+        case R.drawable.func_elman:
+            break;
+        case R.drawable.func_ma:
+            break;
+        case R.drawable.func_ba:
+            break;
+        case R.drawable.func_elsister:
+            break;
+        case R.drawable.func_ysister:
+            break;
+        case R.drawable.func_brother:
+            break;
+        case R.drawable.func_mine:
             finish();
+            break;
 
-        }
+    }
     }
 }
