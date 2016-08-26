@@ -1,3 +1,72 @@
 <resources>
-    <string name="app_name">Care</string>
+    <string name="app_name">銀級小管家</string>
+    <string name="home">首\n頁</string>
+    <string name="care">保\n健</string>
+    <string name="cancel">取\n消</string>
+    <string name="save">存\n檔</string>
+    <string name="add">新\n增</string>
+    <string name="find">尋\n找</string>
+    <string name="config">設\n定</string>
+    <string name="edit">編輯</string>
+    <string name="enable">啟用</string>
+    <string name="disable">停用</string>
+    <string name="delete">刪除</string>
+    <string name="ok">確定</string>
+    <string name="cancel_1">取消</string>
+
+
+    <!--Care.CareActivity-->
+    <string name="myDD">保健提醒</string>
+    <string name="addDD">新增提醒</string>
+    <string name="logDD">歷史記錄</string>
+    <string name="setDD">設定管理</string>
+
+    <!--Care.SetDDActivity-->
+    <string name="setDrug">設定保健項目</string>
+    <string name="setMember">編輯成員管理</string>
+    <string name="setTime">週期時間管理</string>
+    <!--<string name="setOthers">其他設定</string>-->
+
+    <string name="inputTitle">編輯或新增</string>
+    <string name="inputItem">請輸入保健項目</string>
+    <string name="inputMember">請輸入保健項目</string>
+
+    <!--Care.AddDDActivity-->
+    <string name="cycle">設定周期(天次數)</string>
+    <string name="clock">設定時段(早中午晚)</string>
+    <string name="member">胖爹</string>
+    <string name="meal">飯後</string>
+
+    <string name="drug">保健藥品或療程</string>
+    <!--care_cycle.xml-->
+    <string name="beginD">8月8日</string>
+    <string name="once">一次</string>
+    <string name="nDay">幾天</string>
+    <string name="perD">每幾天</string>
+    <!--Care_time.xml-->
+    <string name="mealA">value1\nvalue2分鐘</string>
+    <string name="mealB">value1\nvalue2分鐘</string>
+    <string name="cycleA">連value2天</string>
+    <string name="cycleB">每value2天</string>
+    <string name="timeA">value1\nvalue2</string>
+    <string name="timeB">value1\nvalue2</string>
+    <string name="timeC">value1\nvalue2</string>
+    <string name="timeD">value1\nvalue2</string>
+    <string name="timeE">每value2小時</string>
+
+    <string name="morning">早上08:30</string>
+    <string name="noon">中午12:30</string>
+    <string name="afternoon">下午06:30</string>
+    <string name="night">晚上09:30</string>
+    <string name="perHr">每幾小時</string>
+
+    <!--Care_clock.xml-->
+    <string name="c_morning">早上</string>
+    <string name="c_noon">中午</string>
+    <string name="c_afternoon">下午</string>
+    <string name="c_night">晚上</string>
+
+    <!--Care.MemberActivity-->
+
+
 </resources>
