@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_horizontal_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_horizontal_margin"
+              android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnMor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/edit_amber1_m"
+            android:onClick="doMorning"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/morning"
+            android:textSize="@dimen/text_sp4"/>
+
+        <Button
+            android:id="@+id/ibnNoon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/edit_amber1_m"
+            android:onClick="doNoon"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/noon"
+            android:textSize="@dimen/text_sp4"/>
+
+        <Button
+            android:id="@+id/ibnAfterN"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/edit_amber1_m"
+            android:onClick="doAfternoon"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/afternoon"
+            android:textSize="@dimen/text_sp4"/>
+
+        <Button
+            android:id="@+id/ibnNight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/text_dp1"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/edit_amber1_m"
+            android:onClick="doNight"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/night"
+            android:textSize="@dimen/text_sp4"/>
+
+        <Button
+            android:id="@+id/perHr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/edit_amber1_m"
+            android:onClick="doPerNHour"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/perHr"
+            android:textSize="@dimen/text_sp4"/>
+    </LinearLayout>
+
+</LinearLayout>

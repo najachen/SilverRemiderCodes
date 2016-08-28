@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/text_dp4"
+              android:paddingTop="@dimen/text_dp4"
+              android:weightSum="10">
+
+    <!-- 開啟編輯視窗
+    <ImageButton
+        android:id="@+id/ibtnEdit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:src="@drawable/edit_amber1_s" /> -->
+
+    <!-- 保健項目,成員 -->
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8.5"
+        android:padding="@dimen/text_dp4"
+        android:text="感冒藥１包"
+        android:textSize="@dimen/text_sp4"/>
+
+    <Switch
+        android:id="@+id/swEnable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"/>
+
+</LinearLayout>

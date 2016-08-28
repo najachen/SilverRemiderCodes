@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_horizontal_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_horizontal_margin"
+              android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/text_dp1"
+            android:layout_weight="2.5"
+            android:drawableRight="@drawable/calendar_amber31_m"
+            android:onClick="doDate"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/beginD"
+            android:textSize="@dimen/text_sp3"/>
+
+        <Button
+            android:id="@+id/btnNDay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:drawableRight="@drawable/calendar_amber31_m"
+            android:onClick="doNDay"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/nDay"
+            android:textSize="@dimen/text_sp3"/>
+
+        <Button
+            android:id="@+id/btnPerNDay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:drawableRight="@drawable/calendar_amber31_m"
+            android:onClick="doPerNDay"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/perD"
+            android:textSize="@dimen/text_sp3"/>
+
+        <Button
+            android:id="@+id/btnOnce"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:drawableRight="@drawable/calendar_amber01_m"
+            android:paddingRight="@dimen/text_dp1"
+            android:text="@string/once"
+            android:textSize="@dimen/text_sp3"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_horizontal_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ToggleButton
+            android:id="@+id/tbtnTimeA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/c_morning"
+            android:textOn="@string/c_morning"
+            android:textSize="@dimen/text_sp5"/>
+
+        <ToggleButton
+            android:id="@+id/tbtnTimeB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/c_noon"
+            android:textOn="@string/c_noon"
+            android:textSize="@dimen/text_sp5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_dp4"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:text="08"
+            android:textSize="@dimen/size_display_4"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/text_dp1"
+            android:text="@string/c_hour"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/size_display_1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/btnHourAdd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/text_dp4"
+                android:paddingTop="@dimen/text_dp4"
+                android:src="@drawable/add_amber1_m"/>
+
+            <ImageButton
+                android:id="@+id/btnHourMinus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/text_dp4"
+                android:paddingTop="@dimen/text_dp4"
+                android:src="@drawable/minus_amber1_m"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="@dimen/text_dp4"
+        android:background="@color/amber_800"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tvMinute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:text="30"
+            android:textSize="@dimen/size_display_4"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/text_dp1"
+            android:text="@string/c_minute"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/size_display_1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/btnMinuteAdd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/text_dp4"
+                android:paddingTop="@dimen/text_dp4"
+                android:src="@drawable/add_amber1_m"/>
+
+            <ImageButton
+                android:id="@+id/btnMinuteMinus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/text_dp4"
+                android:paddingTop="@dimen/text_dp4"
+                android:src="@drawable/minus_amber1_m"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="@dimen/text_dp4"
+        android:background="@color/amber_800"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textSize="@dimen/text_sp5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

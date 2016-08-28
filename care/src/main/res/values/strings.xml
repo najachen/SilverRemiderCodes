@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">銀級小管家</string>
+
+    <string name="label_adddd">保健 > 新增提醒</string>
+
+
     <string name="home">首\n頁</string>
     <string name="care">保\n健</string>
     <string name="cancel">取\n消</string>
@@ -13,6 +17,7 @@
     <string name="delete">刪除</string>
     <string name="ok">確定</string>
     <string name="cancel_1">取消</string>
+    <string name="back">倒退</string>
 
 
     <!--Care.CareActivity-->
@@ -29,31 +34,23 @@
 
     <string name="inputTitle">編輯或新增</string>
     <string name="inputItem">請輸入保健項目</string>
-    <string name="inputMember">請輸入保健項目</string>
+    <string name="inputMember">請輸入暱稱</string>
+    <string name="inputNull">您未輸入</string>
 
     <!--Care.AddDDActivity-->
     <string name="cycle">設定周期(天次數)</string>
     <string name="clock">設定時段(早中午晚)</string>
     <string name="member">胖爹</string>
-    <string name="meal">飯後</string>
+    <string name="mealA">飯後</string>
+    <string name="mealB">飯前</string>
 
     <string name="drug">保健藥品或療程</string>
-    <!--care_cycle.xml-->
+    <!--activity_care_add_cycle.xmlcycle.xml-->
     <string name="beginD">8月8日</string>
     <string name="once">一次</string>
     <string name="nDay">幾天</string>
     <string name="perD">每幾天</string>
     <!--Care_time.xml-->
-    <string name="mealA">value1\nvalue2分鐘</string>
-    <string name="mealB">value1\nvalue2分鐘</string>
-    <string name="cycleA">連value2天</string>
-    <string name="cycleB">每value2天</string>
-    <string name="timeA">value1\nvalue2</string>
-    <string name="timeB">value1\nvalue2</string>
-    <string name="timeC">value1\nvalue2</string>
-    <string name="timeD">value1\nvalue2</string>
-    <string name="timeE">每value2小時</string>
-
     <string name="morning">早上08:30</string>
     <string name="noon">中午12:30</string>
     <string name="afternoon">下午06:30</string>
@@ -65,6 +62,9 @@
     <string name="c_noon">中午</string>
     <string name="c_afternoon">下午</string>
     <string name="c_night">晚上</string>
+    <string name="c_sleep">睡前</string>
+    <string name="c_hour">點</string>
+    <string name="c_minute">分</string>
 
     <!--Care.MemberActivity-->
 

@@ -21,7 +21,7 @@
     <dimen name="text_sp8">16sp</dimen>
 
     <!--
-    參考網址 https://material.google.com/style/typography.html
+    https://material.google.com/style/typography.html
     -->
     <dimen name="size_button">15sp</dimen><!--medium-->
     <dimen name="size_caption">13sp</dimen><!--regular-->

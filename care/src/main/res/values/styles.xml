@@ -1,11 +1,49 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Care" parent="AppTheme">
+        <!-- hide ActionBar
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item> -->
+        <item name="colorPrimaryDark">@color/amber_800</item>
+        <item name="colorPrimary">@color/brown_800</item>
+        <item name="colorAccent">@color/amber_700</item>
+        <item name="android:windowBackground">@color/amber_100</item>
+
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorSwitchThumbNormal">@color/amber_300</item>
+        <item name="colorControlNormal">@color/amber_300
+        </item>
+        <item name="colorControlActivated">@color/amber_500
+        </item>
+        <item name="colorControlHighlight">@color/amber_500</item>
+
+        <item name="android:textColorPrimary">@color/grey_700</item>
+        <item name="android:textColor">@color/grey_800</item>
+        <item name="android:textColorHint">@color/black_38</item>
+
+    </style>
+
+
+    <style name="AppTheme.Care.DialogAlert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/grey_700</item>
+        <item name="android:background">@color/amber_100</item>
+        <item name="android:textColor">@color/grey_800</item>
+        <item name="android:textColorHint">@color/black_38</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/grey_800</item>
+        <item name="android:textSize">@dimen/size_headline</item>
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorSwitchThumbNormal">@color/amber_300</item>
+        <item name="colorControlNormal">@color/amber_300</item>
+        <item name="colorControlActivated">@color/amber_500</item>
+        <item name="colorControlHighlight">@color/amber_500</item>
     </style>
 
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="silver.reminder.care">
+    package="silver.reminder">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,52 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CareMainActivity"/>
+        <activity
+            android:name=".care.CareActivity"
+            android:label="@string/care"
+            android:theme="@style/AppTheme.Care">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".care.MyDDActivity"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.AddDDActivity"
+            android:label="@string/label_adddd"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.SetDDActivity"
+            android:label="@string/setDD"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.LogDDActivity"
+            android:label="@string/logDD"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.SetDrugActivity"
+            android:label="@string/setDrug"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.SetMemberActivity"
+            android:parentActivityName=".care.SetMemberActivity"
+            android:label="@string/setMember"
+            android:theme="@style/AppTheme.Care" />
+        <activity
+            android:name=".care.SetTimeActivity"
+            android:label="@string/setTime"
+            android:theme="@style/AppTheme.Care" />
+        <activity android:name=".care.AddDDCycleActivity"
+            android:theme="@style/AppTheme.Care" />
+        <activity android:name=".care.AddDDTimeActivity"
+            android:theme="@style/AppTheme.Care" />
+        <activity android:name=".care.AddDDClockActivity"
+            android:theme="@style/AppTheme.Care.DialogAlert" />
+        <activity android:name=".care.AddDDNHourActivity"
+            android:theme="@style/AppTheme.Care.DialogAlert" />
     </application>
 
 </manifest>

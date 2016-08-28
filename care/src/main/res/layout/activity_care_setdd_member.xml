@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="10"
-    tools:context=".care.SetMemberActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:weightSum="10"
+              tools:context=".care.SetMemberActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:drawableLeft="@drawable/config_amber6_m"
-            android:onClick="goSetDD"
             android:paddingLeft="@dimen/text_dp3"
             android:text="@string/config"
-            android:textSize="@dimen/text_sp7" />
+            android:textSize="@dimen/text_sp7"
+            android:visibility="invisible"/>
 
         <Button
             android:id="@+id/btnSave"
@@ -40,16 +40,28 @@
             android:visibility="invisible"/>
 
         <Button
-            android:id="@+id/btnAdd"
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3.5"
             android:drawableRight="@drawable/add_amber1_m"
+            android:onClick="add"
             android:paddingRight="@dimen/text_dp3"
             android:text="@string/add"
-            android:textSize="@dimen/text_sp7" />
+            android:textSize="@dimen/text_sp7"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_dp5">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/amber_800"/>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

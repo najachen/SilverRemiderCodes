@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="10"
-    tools:context=".care.CareActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:weightSum="10"
+              tools:context=".care.CareActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,57 +25,62 @@
             android:drawableLeft="@drawable/home_amber2_m"
             android:paddingLeft="@dimen/text_dp3"
             android:text="@string/home"
-            android:textSize="@dimen/text_sp7" />
+            android:textSize="@dimen/text_sp7"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:orientation="vertical"
-        android:weightSum="10">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <Button
-            android:id="@+id/btnMyDD"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:drawableLeft="@drawable/alarm_amber1_b"
-            android:padding="@dimen/text_dp2"
-            android:text="@string/myDD"
-            android:textSize="@dimen/text_sp2" />
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="10">
 
-        <Button
-            android:id="@+id/btnAddDD"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:drawableLeft="@drawable/new_amber1_b"
-            android:padding="@dimen/text_dp2"
-            android:text="@string/addDD"
-            android:textSize="@dimen/text_sp2" />
+            <Button
+                android:id="@+id/btnMyDD"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:drawableLeft="@drawable/alarm_amber1_m"
+                android:padding="@dimen/text_dp2"
+                android:text="@string/myDD"
+                android:textSize="@dimen/text_sp3"/>
 
-        <Button
-            android:id="@+id/btnLogDD"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:drawableLeft="@drawable/menu_log_amber1_b"
-            android:padding="@dimen/text_dp2"
-            android:text="@string/logDD"
-            android:textSize="@dimen/text_sp2" />
+            <Button
+                android:id="@+id/btnAddDD"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:drawableLeft="@drawable/new_amber1_m"
+                android:padding="@dimen/text_dp2"
+                android:text="@string/addDD"
+                android:textSize="@dimen/text_sp3"/>
 
-        <Button
-            android:id="@+id/btnSetDD"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:drawableLeft="@drawable/config_amber6_b"
-            android:padding="@dimen/text_dp2"
-            android:text="@string/setDD"
-            android:textSize="@dimen/text_sp2" />
+            <Button
+                android:id="@+id/btnLogDD"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:drawableLeft="@drawable/menu_log_amber1_m"
+                android:padding="@dimen/text_dp2"
+                android:text="@string/logDD"
+                android:textSize="@dimen/text_sp3"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnSetDD"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:drawableLeft="@drawable/config_amber6_m"
+                android:padding="@dimen/text_dp2"
+                android:text="@string/setDD"
+                android:textSize="@dimen/text_sp3"/>
 
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
