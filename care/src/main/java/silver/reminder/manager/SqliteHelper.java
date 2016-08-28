@@ -14,10 +14,8 @@ import silver.reminder.care.model.CareTime;
 
 public class SqliteHelper extends SQLiteOpenHelper {
 
-    //系統紀錄
     private static final String TAG = "careLog: " + SqliteHelper.class.getName();
 
-    //資料庫參數
     private static final String DATABASE_NAME = "care.db";
     private static final int DATABASE_VERSION = 5;
 
@@ -31,39 +29,20 @@ public class SqliteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //建立資料表
-        Log.d(TAG,"onCreate() 建立資料表");
         sqLiteDatabase.execSQL(CareMain.CREATE_TABLE);
-        Log.d(TAG,"onCreate() ...提醒主檔資料表建立");
         sqLiteDatabase.execSQL(CareTask.CREATE_TABLE);
-        Log.d(TAG,"onCreate() ...提醒任務資料表建立");
         sqLiteDatabase.execSQL(CareDrug.CREATE_TABLE);
-        Log.d(TAG,"onCreate() ...保健項目資料表建立");
         sqLiteDatabase.execSQL(CareMember.CREATE_TABLE);
-        Log.d(TAG,"onCreate() ...成員名單資料表建立");
         sqLiteDatabase.execSQL(CareTime.CREATE_TABLE);
-        Log.d(TAG,"onCreate() ...時間參數資料表建立");
-        //
-        Log.d(TAG,"onCreate() 新增預設資料");
     }
 
-    //Sqlite版本(DATABASE_VERSION)升級時會呼叫此方法
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        //備份資料表
-        Log.d(TAG,"onUpgrade() 備份資料表");
-        //移除資料表
-        Log.d(TAG,"onUpgrade() 移除資料表");
         sqLiteDatabase.execSQL(CareMain.DROP_TABLE);
-        Log.d(TAG,"onUpgrade() ...提醒主檔資料表移除");
         sqLiteDatabase.execSQL(CareTask.DROP_TABLE);
-        Log.d(TAG,"onUpgrade() ...提醒任務資料表移除");
         sqLiteDatabase.execSQL(CareDrug.DROP_TABLE);
-        Log.d(TAG,"onUpgrade() ...保健項目資料表移除");
         sqLiteDatabase.execSQL(CareMember.DROP_TABLE);
-        Log.d(TAG,"onUpgrade() ...成員名單資料表移除");
         sqLiteDatabase.execSQL(CareTime.DROP_TABLE);
-        Log.d(TAG,"onUpgrade() ...時間參數資料表移除");
-        //重新建立資料表及新增預設資料
         onCreate(sqLiteDatabase);
     }
 }
